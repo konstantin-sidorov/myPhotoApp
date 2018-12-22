@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="myPhotoApp.gui.mainController"
+            prefHeight="430.0" prefWidth="610.0">
+<children>
+<TableView fx:id="tablePhotos" layoutX="12.0" layoutY="62.0" prefHeight="324.0" prefWidth="400.0">
+    <columns>
+        <TableColumn prefWidth="400.0" text="Name photo:" fx:id="listId" />
+    </columns>
+</TableView>
+    <Label layoutX="14.0" layoutY="18.0" text="List all photos:">
+        <font>
+            <Font name="Verdana" size="24.0" />
+        </font>
+    </Label>
+    <ImageView fx:id="boximage" layoutY="62" layoutX="420.0" fitHeight="150" fitWidth="200"/>
+</children>
+<HBox layoutX="12.0" layoutY="400" prefWidth="610">
+    <Button text="Save" onAction="#btnSaveClick"/>
+    <Button text="Show" onAction="#btnOpenClick"/>
+    <Button text="FromDB" onAction="#btnFromDBClick"/>
+    <Button text="Close" onAction="#btnCloseClick"/>
+</HBox>
+</AnchorPane>
